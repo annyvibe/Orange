@@ -78,7 +78,7 @@ function draw() {
         let thumb = hands[0].thumb_tip;
         let pinch = dist(finger.x, finger.y, thumb.x, thumb.y);
         let speed = map(pinch, 0, 700, 0.1, 2);
-        // console.log(pinch);
+        console.log(pinch);
         orangeVideo.speed(speed);
     } else {
         orangeVideo.speed(1);
