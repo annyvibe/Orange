@@ -34,22 +34,22 @@ function setup() {
         startVideo();
     });
 
-    // let fullscreenButton = document.createElement('button');
-    // fullscreenButton.id = 'fullscreenButton';
-    // fullscreenButton.textContent = 'Enter Fullscreen';
-    // fullscreenButton.style.position = 'absolute';
-    // fullscreenButton.style.top = '10px';
-    // fullscreenButton.style.right = '10px';
-    // document.body.appendChild(fullscreenButton);
+    let fullscreenButton = document.createElement('button');
+    fullscreenButton.id = 'fullscreenButton';
+    fullscreenButton.textContent = 'Enter Fullscreen';
+    fullscreenButton.style.position = 'absolute';
+    fullscreenButton.style.top = '10px';
+    fullscreenButton.style.right = '10px';
+    document.body.appendChild(fullscreenButton);
 
-    // fullscreenButton.addEventListener('click', function () {
-    //     requestFullScreen();
-    //     fullscreenButton.style.display = 'none';
-    // });
-    // fullscreenButton.addEventListener('touchstart', function () {
-    //     requestFullScreen();
-    //     fullscreenButton.style.display = 'none';
-    // });
+    fullscreenButton.addEventListener('click', function () {
+        requestFullScreen();
+        fullscreenButton.style.display = 'none';
+    });
+    fullscreenButton.addEventListener('touchstart', function () {
+        requestFullScreen();
+        fullscreenButton.style.display = 'none';
+    });
 
 }
 function requestMotionAccess() {
